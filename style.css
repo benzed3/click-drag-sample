@@ -1,3 +1,24 @@
 body {
     background-color: aqua;
 }
+
+h1 {
+    background-color: blue;
+    width: 2%;
+}
+
+#kDiv {
+    position: absolute;
+}
+
+#kDivheader {
+    cursor: move;
+}
+
+#qDiv {
+    position: absolute;
+}
+
+#qDivheader {
+    cursor: move;
+}
