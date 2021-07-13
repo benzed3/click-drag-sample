@@ -2,6 +2,11 @@ body {
     background-color: aqua;
 }
 
+.box {
+    background-color: blue;
+    float: left;
+}
+
 h1 {
     background-color: blue;
     width: 2%;
@@ -13,6 +18,9 @@ h1 {
 
 #kDivheader {
     cursor: move;
+    background-color: blue;
+    width: 30px;
+    height: 39px;
 }
 
 #qDiv {
@@ -21,4 +29,14 @@ h1 {
 
 #qDivheader {
     cursor: move;
+    background-color: blue;
+    width: 30px;
+    height: 39px;
+}
+
+#div1 {
+  width: 350px;
+  height: 70px;
+  padding: 10px;
+  border: 1px solid #aaaaaa;
 }
