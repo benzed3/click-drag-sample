@@ -5,14 +5,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <title>Click and Drag Example</title>
 </head>
 
 <body>
 
+    <h1>Touch Events</h1>
+    <h2>Touchmove</h2>
+    <p ontouchmove="myFunction(event)">touch here and move finger to display coordinates</p>
+    <p id="demo"></p>
 
+    <script>
+        function myFunction(event) {
+            var x = event.touches[0].clientX;
+            var y = event.touches[0].clientY;
+            document.getElementById("demo").innerHTML = "x=" + x + ", y=" + y;
+        }
+    </script>
 
 </body>
 
