@@ -2,3 +2,32 @@ body {
     background-color: aqua;
 }
 
+.box {
+    width: 100px;
+    height: 100px;
+    border: brown;
+    border-width: 2px;
+    border-style: solid;
+}
+
+#white {
+    background-color: white;
+}
+
+#black {
+    background-color: black;
+}
+
+#rook {
+    position:absolute;
+}
+
+#rook2 {
+    position:absolute;
+}
+
+img {
+    height: 90px;
+    width: 90px;
+    z-index: 8;
+}
