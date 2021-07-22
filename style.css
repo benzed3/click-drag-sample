@@ -30,4 +30,5 @@ img {
     height: 90px;
     width: 90px;
     z-index: 8;
+    background-color: none;
 }
