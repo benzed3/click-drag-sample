@@ -1,10 +1,10 @@
 
 
-var whiterook = getElementById("rook");
+var whiterook = document.getElementById("rook");
 
 whiterook.addEventListener("touchmove", function (ev) {
 
-    var touchlocation = ev.targetTouches[0];
+    var touchLocation = ev.targetTouches[0];
 
     whiterook.style.left = touchLocation.pageX + "px";
     whiterook.style.top = touchLocation.pageY + "px";
