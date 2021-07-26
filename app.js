@@ -1,4 +1,4 @@
-
+//for white rook
 
 var whiterook = document.getElementById("rook");
 
@@ -18,4 +18,22 @@ whiterook.addEventListener("touchend", function (ev) {
 
 })
 
+//for black rook
 
+var blackrook = document.getElementById("rook2");
+
+blackrook.addEventListener("touchmove", function (ev) {
+
+    var touchLocation = ev.targetTouches[0];
+
+    blackrook.style.left = touchLocation.pageX + "px";
+    blackrook.style.top = touchLocation.pageY + "px";
+
+})
+
+blackrook.addEventListener("touchend", function (ev) {
+
+    var x = parseInt(blackrook.style.left);
+    var y = parseInt(blackrook.style.top);
+
+})
