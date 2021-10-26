@@ -15,18 +15,20 @@
 
     <div class="box" id="white">
 
-        <div id="rook">
-            <img src="white_rook.jpg">
+        <div id="rook" class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <img src="white_rook.jpg" ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true"
+                id="dragtargetA">
         </div>
 
     </div>
 
     <br>
 
-    <div class="box" id="black">
+    <div class="box">
 
-        <div id="rook2">
-            <img src="black_rook.jpg">
+        <div id="rook2" id="black" class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <img src="black_rook.jpg" ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true"
+                id="dragtargetB">
         </div>
 
     </div>
