@@ -59,6 +59,21 @@
             document.getElementById("demo").innerHTML = "x=" + x + ", y=" + y;
         }
 
+        //for click and drag kenshin picture
+        function dragStart(event) {
+            event.dataTransfer.setData("Text", event.target.id);
+        }
+
+        function allowDrop(event) {
+            event.preventDefault();
+        }
+
+        function drop(event) {
+            event.preventDefault();
+            var data = event.dataTransfer.getData("Text");
+            event.target.appendChild(document.getElementById(data));
+        }
+
     </script>
 
     <script src="app.js"></script>
