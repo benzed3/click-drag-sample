@@ -41,16 +41,26 @@
 
     <br>
 
-    <img src="Kenshin.jpg" ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="dragtarget">
+    <img src="Kenshin.jpg" id="kenshin" style="position: absolute;">
 
     <script>
 
         //for touch drag
-        function myFunction(event) {
-            var x = event.touches[0].clientX;
-            var y = event.touches[0].clientY;
-            document.getElementById("demo").innerHTML = "x=" + x + ", y=" + y;
+        window.onload = function () {
+
+            var kenshinimg = document.getElementById("kenshin");
+
+            kenshinimg.addEventListener("touchmove", function (ev) {
+
+                var touchLocation = ev.targetTouches[0];
+
+                kenshinimg.style.left = touchLocation.pageX + "px";
+                kenshinimg.style.top = touchLocation.pageY + "px";
+
+            })
+
         }
+
 
         //for click and drag kenshin picture
         function dragStart(event) {
