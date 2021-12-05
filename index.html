@@ -45,7 +45,7 @@
 
     <script>
 
-        //for touch drag
+        //for touch drag(test)//
         document.querySelector("#kenshin").addEventListener("touchstart", f);
         document.querySelector("#kenshin").addEventListener("touchend", f);
         document.querySelector("#kenshin").addEventListener("touchmove", f);
@@ -53,6 +53,23 @@
         function f(ev) {
             console.log(ev.touches, ev.type);//touches gives an array, type gives the type of touch i.e touchstart//
         }
+
+        //for touch drag(real code)//
+        function touchStart(e) {
+            e.preventDefault();
+            var KenshinPic = e.target;
+            var touch = e.touches[0];
+            var moveOffsetX = KenshinPic.offsetLeft - touch.pageX;
+            var moveOffsetY = KenshinPic.offsetTop - touch.pageY;
+            KenshinPic.addEventListener("touchmove", function () {
+                var positionX = touch.pageX + moveOffsetX;
+                var positionY = touch.pageY + moveOffsetY;
+                KenshinPic.style.left = positionX + "px";
+                KenshinPic.style.top = positionY + "px";
+            }, false);
+        }
+
+        document.querySelector("body").addEventListener("touchstart", touchStart, false);
 
 
 
