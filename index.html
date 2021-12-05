@@ -41,7 +41,7 @@
 
     <br>
 
-    <img src="Kenshin.jpg" id="kenshin">
+    <img src="Kenshin.jpg" id="kenshin" draggable="true">
 
     <script>
 
@@ -55,12 +55,14 @@
         }
 
         //for touch drag(real code)//
+
         function touchStart(e) {
             e.preventDefault();
             var KenshinPic = e.target;
             var touch = e.touches[0];
             var moveOffsetX = KenshinPic.offsetLeft - touch.pageX;
             var moveOffsetY = KenshinPic.offsetTop - touch.pageY;
+
             KenshinPic.addEventListener("touchmove", function () {
                 var positionX = touch.pageX + moveOffsetX;
                 var positionY = touch.pageY + moveOffsetY;
