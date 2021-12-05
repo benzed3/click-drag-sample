@@ -46,6 +46,11 @@
     <script>
 
         //for touch drag
+        document.querySelector("#kenshin").addEventListener("touchstart", f);
+
+        function f(ev) {
+            console.log(ev.touches);
+        }
 
 
         //for click and drag kenshin picture
