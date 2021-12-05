@@ -41,25 +41,12 @@
 
     <br>
 
-    <img src="Kenshin.jpg" id="kenshin" style="position: absolute;">
+    <img src="Kenshin.jpg" id="kenshin">
 
     <script>
 
         //for touch drag
-        window.onload = function () {
 
-            var kenshinimg = document.getElementById("kenshin");
-
-            kenshinimg.addEventListener("touchmove", function (ev) {
-
-                var touchLocation = ev.targetTouches[0];
-
-                kenshinimg.style.left = touchLocation.pageX + "px";
-                kenshinimg.style.top = touchLocation.pageY + "px";
-
-            })
-
-        }
 
         //for click and drag kenshin picture
         function dragStart(event) {
