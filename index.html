@@ -47,6 +47,7 @@
 
         //for touch drag
         document.querySelector("#kenshin").addEventListener("touchstart", f);
+        document.querySelector("#kenshin").addEventListener("touchend", f);
 
         function f(ev) {
             console.log(ev.touches, ev.type);//touches gives an array, type gives the type of touch i.e touchstart//
