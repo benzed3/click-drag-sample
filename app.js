@@ -64,3 +64,25 @@ kenshinpic.addEventListener("touchend", function (ev) {
 
 })
 
+//for tial rook//
+
+var trook = document.getElementById("trialRook");
+
+trook.addEventListener("touchmove", function (ev) {
+
+    ev.preventDefault();
+
+    var touchLocation = ev.targetTouches[0];
+
+    trook.style.left = touchLocation.pageX + "px";
+    trook.style.top = touchLocation.pageY + "px";
+
+})
+
+trook.addEventListener("touchend", function (ev) {
+
+    var x = parseInt(trook.style.left);
+    var y = parseInt(trook.style.top);
+
+})
+

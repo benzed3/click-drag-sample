@@ -59,3 +59,9 @@ img {
 .bs {
     background: brown;
 }
+
+#trialRook {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+}
