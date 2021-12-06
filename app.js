@@ -1,4 +1,4 @@
-//for white rook
+//for white rook//
 
 var whiterook = document.getElementById("rook");
 
@@ -18,7 +18,7 @@ whiterook.addEventListener("touchend", function (ev) {
 
 })
 
-//for black rook
+//for black rook//
 
 var blackrook = document.getElementById("rook2");
 
@@ -38,5 +38,23 @@ blackrook.addEventListener("touchend", function (ev) {
 
 })
 
-//drag and drop for kenshin image//
+//for kenshin pic//
+
+var kenshinpic = document.getElementById("kenshin");
+
+kenshinpic.addEventListener("touchmove", function (ev) {
+
+    var touchLocation = ev.targetTouches[0];
+
+    kenshinpic.style.left = touchLocation.pageX + "px";
+    kenshinpic.style.top = touchLocation.pageY + "px";
+
+})
+
+kenshinpic.addEventListener("touchend", function (ev) {
+
+    var x = parseInt(kenshinpic.style.left);
+    var y = parseInt(kenshinpic.style.top);
+
+})
 
