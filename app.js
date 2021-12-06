@@ -4,6 +4,8 @@ var whiterook = document.getElementById("rook");
 
 whiterook.addEventListener("touchmove", function (ev) {
 
+    ev.preventDefault();
+
     var touchLocation = ev.targetTouches[0];
 
     whiterook.style.left = touchLocation.pageX + "px";
@@ -24,6 +26,8 @@ var blackrook = document.getElementById("rook2");
 
 blackrook.addEventListener("touchmove", function (ev) {
 
+    ev.preventDefault();
+
     var touchLocation = ev.targetTouches[0];
 
     blackrook.style.left = touchLocation.pageX + "px";
@@ -43,6 +47,8 @@ blackrook.addEventListener("touchend", function (ev) {
 var kenshinpic = document.getElementById("kenshin");
 
 kenshinpic.addEventListener("touchmove", function (ev) {
+
+    ev.preventDefault();
 
     var touchLocation = ev.targetTouches[0];
 
