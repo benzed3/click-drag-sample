@@ -66,8 +66,8 @@ img {
 
 /*small chessboard*/
 #trialRook {
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 60%;
+    max-height: 40px;
     margin: auto;
     display: block;
 }
