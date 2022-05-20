@@ -19,11 +19,11 @@ body {
 }
 
 #rook {
-    position:absolute;
+    position: absolute;
 }
 
 #rook2 {
-    position:absolute;
+    position: absolute;
 }
 
 img {
@@ -60,13 +60,8 @@ img {
     background: brown;
 }
 
-#trialRook {
-    height: 50px;
-    width: 50px;
-    position: absolute;
-    left: 365px;
-}
-
 #mydiv {
     position: absolute;
 }
+
+/*small chessboard*/
